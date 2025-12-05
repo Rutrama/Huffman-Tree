@@ -79,10 +79,58 @@ Após a execução do projeto, será gerado na pasta `/data`:
   - Uma lista dos Códigos de Huffman gerados, onde cada linha contém uma palavra e seu código binário respectivo separados por ' : '
   - Cada bloco de texto e sua versão comprimida.
 
-- O arquivo `huffman_tree.png` - Caso o graphviz esteja devidamente instalado - contendo uma representação gráfica da **Árvore de Huffman** gerada.
+```bash
+- Estrutura da Árvore (serializada):
+(40,(16,(8,(4,(2,(1,do),(1,as)),(2,(1,informações),(1,coordenam))),(4,(2,recursos),(2,(1,coordena),(1,processador)))),(8,(4,(2,(1,e),(1,operacionais)),(2,cpu)),(4,(2,(1,processa),(1,dados)),(2,tarefas)))),(24,(10,(4,(2,sistema),(2,(1,armazena),(1,acessa))),(6,.)),(14,(6,(3,os),(3,(1,sistemas),(2,memória))),(8,(4,a),(4,(2,o),(2,controlam))))))
+
+- Lista de códigos de Huffman gerados:
+'.': 101
+'a': 1110
+'acessa': 10011
+'armazena': 10010
+'as': 00001
+'controlam': 11111
+'coordena': 00110
+'coordenam': 00011
+'cpu': 0101
+'dados': 01101
+'do': 00000
+'e': 01000
+'informações': 00010
+'memória': 11011
+'o': 11110
+'operacionais': 01001
+'os': 1100
+'processa': 01100
+'processador': 00111
+'recursos': 0010
+'sistema': 1000
+'sistemas': 11010
+'tarefas': 0111
+
+-----------------------------------------------------------------
+
+
+ - Bloco de Texto 1
+ Texto Original: A memória armazena informações. A CPU acessa a memória. A CPU processa dados.
+ Texto Comprimido: 11101101110010000101011110010110011111011011101111001010110001101101
+
+
+ - Bloco de Texto 2
+ Texto Original: Os recursos controlam o sistema. O sistema coordena tarefas.
+ Texto Comprimido: 1100001011111111101000101111101000001100111101
+
+
+ - Bloco de Texto 3
+ Texto Original: Os sistemas operacionais controlam os recursos e coordenam as tarefas do processador.
+ Texto Comprimido: 11001101001001111111100001001000000110000101110000000111101
+```
 
 - O arquivo `huffman_tree` contendo a representação em grafo da **Árvore de Huffman** na linguagem `DOT`
 
+- O arquivo `huffman_tree.png` - Caso o graphviz esteja devidamente instalado - contendo uma representação gráfica da **Árvore de Huffman** gerada.
+
+ <img src="data/huffman_tree.png">
 
 ### Especificações do Teste
 Os testes foram executados utilizando as seguintes especificações de máquina:
@@ -123,4 +171,5 @@ Os testes foram executados utilizando as seguintes especificações de máquina:
       </a>
     </td>
   </tr>
+
 
