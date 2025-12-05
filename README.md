@@ -48,7 +48,7 @@ Foram construídos **4 scripts em Python**:
 - Mova o arquivo `input.dat`, contendo o texto a ser comprimido, para a localização: `/data/input.dat`
 
 #### Dependências
-Para gerar a imagem da árvore de huffman, instale o graphviz usando seu gerenciador de pacotes, no caso do Ubuntu, o seguinte comando pode ser usado no terminal.
+OPCIONALMENTE, para gerar a IMAGEM da árvore de huffman, instale o graphviz usando seu gerenciador de pacotes, no caso do Ubuntu, o seguinte comando pode ser usado no terminal.
 ```bash
 sudo apt-get install graphviz
 ```
@@ -57,7 +57,7 @@ Também é necessário instalar o wrapper para o graphviz no python usando o seg
 pip install graphviz
 ```
 
-Caso não o graphviz não seja encontrado, será emitida uma mensagem de erro e o arquivo '.png' não será gerado.
+Caso não o graphviz não seja encontrado, o código AINDA será COMPLETAMENTE FUNCIONAL, porém será emitida uma mensagem de erro e o arquivo '.png' não será gerado.
 
 ---
 
@@ -123,3 +123,4 @@ Os testes foram executados utilizando as seguintes especificações de máquina:
       </a>
     </td>
   </tr>
+
